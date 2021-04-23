@@ -1,0 +1,33 @@
+names and values:
+	checked-#			=	status
+		TRUE				=	checked
+		FALSE				=	unchecked
+	name-#				=	name
+	descr-#				=	description
+	frequency-#			=	frequency
+		1					=	just once
+		every				=	every _ _
+			repFrequency-#		=	time between reps
+			timeBetweenReps-#	=	type of time between reps
+				d					=	days
+				w					=	weeks
+				m					=	months
+		times				=	_ times a _
+			repsInLength-#		=	repititions in a length
+			length-#			=	length that has repititions
+				d					=	day
+				w					=	week
+				m					=	month
+				y					=	year
+	ends-#				=	ending
+		never				=	forever
+		reps				=	for _ repititions
+			repsTillDone-#		=	repititions until task ends
+		date				=	until _
+			date-#				=	date of last repitition
+--------------------------------------------------------------------
+replace:
+	#			=	task number
+	tomorrow	=	date of tomorrow
+	cell		=	td
+	today		=	date of today

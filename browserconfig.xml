@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+	<msapplication>
+		<tile>
+			<square70x70logo src="https://paul-s-reid.com/web-dev/Doit!-html/favicon.png"/>
+			<square150x150logo src="https://paul-s-reid.com/web-dev/Doit!-html/favicon.png"/>
+			<wide310x150logo src="https://paul-s-reid.com/web-dev/Doit!-html/banner.png"/>
+			<square310x310logo src="https://paul-s-reid.com/web-dev/Doit!-html/favicon.png"/>
+		</tile>
+	</msapplication>
+</browserconfig>

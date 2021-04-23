@@ -1,0 +1,274 @@
+html,
+body,
+:root {
+	--primary: #8eb8ff;
+	--secondary: #37378e;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-display: swap;
+}
+
+#title {
+	text-align: center;
+	background: var(--primary);
+	color: var(--secondary);
+	margin-bottom: 35px;
+}
+
+#taskTable {
+	width: 100%;
+}
+
+.task {
+	height: 145px;
+
+	&:nth-child(odd) {
+		background: #ddd;
+	}
+
+	&:nth-child(even) {
+		background: #bbb;
+	}
+
+	&:focus-within,
+	&:hover {
+		&:nth-child(odd) {
+			&:not(:checked) input[type="checkbox"] {
+				background: url(greyCheck.png) center;
+			}
+
+			input,
+			select,
+			textarea {
+				background: #eee;
+			}
+		}
+
+		&:nth-child(even) {
+			&:not(:checked) input[type="checkbox"] {
+				background: url(lightGreyCheck.png) center;
+			}
+
+			input,
+			select,
+			textarea {
+				background: #ccc;
+			}
+		}
+
+		select {
+			border: none;
+			overflow: hidden;
+			appearance: auto;
+			padding-right: 0;
+		}
+
+		.button {
+			display: inline-block;
+		}
+	}
+}
+
+.checkboxParent {
+	text-align: center;
+	padding: 0;
+	width: 50px;
+
+	.button {
+		font-size: 1.5rem;
+		display: none;
+	}
+
+	input[type="checkbox"] {
+		border-radius: 100%;
+		background-size: contain !important;
+		outline: 0;
+		width: 30px;
+		appearance: none;
+
+		&:checked {
+			background: url(greenCheck.png) center;
+		}
+	}
+}
+
+.button {
+	height: 30px;
+	margin: 3.5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+input {
+	margin: 13px 0;
+}
+
+input,
+textarea,
+select {
+	font-size: 1.17em;
+	font-weight: 700;
+	background: none;
+	border: none;
+	display: inline;
+}
+
+.fa-trash-alt {
+	color: #ff16009c;
+}
+
+.fa-save {
+	color: #0000ff9c;
+}
+
+.taskName {
+	max-height: 145.45px;
+	width: calc(100% - 405px);
+	padding: 0 !important;
+}
+
+.name {
+	display: inline;
+	width: 99%;
+}
+
+.editDescription,
+.editName {
+	margin: 5px 0;
+	resize: none;
+	width: 99.4%;
+	font-family: Arial;
+}
+
+.description {
+	width: 100%;
+	margin: 0;
+}
+
+.editDescription {
+	height: 70px;
+}
+
+.repetition {
+	width: 350px;
+	position: relative;
+
+	input,
+	select,
+	textarea {
+		margin: 0;
+		height: 35px;
+		text-align: right;
+	}
+
+	div {
+		position: absolute;
+		width: 100%;
+
+		&:first-child {
+			top: 0;
+		}
+
+		&:last-child {
+			top: 50%;
+		}
+	}
+
+	label {
+		top: 30px;
+	}
+}
+
+input[type="radio"] {
+	position: absolute;
+	top: 0;
+	display: none;
+
+	&:checked + label.repeat {
+		display: block;
+	}
+
+	&:first-child {
+		left: 0;
+	}
+
+	&:nth-child(3) {
+		left: 50%;
+	}
+
+	&:nth-child(5) {
+		right: 6px;
+	}
+}
+
+label {
+	display: none;
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.17em;
+	font-weight: 700;
+
+	&:nth-child(2) {
+		margin: 13px 0;
+	}
+
+	.repeat {
+		top: 26px;
+	}
+
+	.end {
+		bottom: 0;
+	}
+}
+
+.editRepeat {
+	min-width: 1ch;
+}
+
+select {
+	overflow: hidden;
+	padding-right: 15px;
+	appearance: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+option[value="select one"] {
+	display: none;
+}
+
+#addNew {
+	font-size: 95px;
+	text-align: center;
+}
+
+.fa-plus::before {
+	vertical-align: middle;
+	color: hsl(0 0% 0% / 0.8);
+	cursor: pointer;
+	content: "+";
+}
+
+#browseHappy {
+	margin-top: 1em;
+	font-size: 20px;
+
+	iframe {
+		width: 100vw;
+		border: none;
+	}
+}
+
+b,
+strong {
+	font-size: 22px;
+}
+
+#newTaskContent {
+	display: none;
+}
