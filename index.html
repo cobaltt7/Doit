@@ -11,21 +11,49 @@
 			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 			crossorigin="anonymous"
 		/>
-		<script src="https://kit.fontawesome.com/7ee5a2a00a.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/7ee5a2a00a.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet/less" href="style.less" />
-		<script src="https://cdn.jsdelivr.net/npm/less" crossorigin="anonymous"></script>
-		<meta name="description" itemprop="description" content="Simple to-do list" />
-		<meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/less"
+			crossorigin="anonymous"
+		></script>
+		<meta
+			name="description"
+			itemprop="description"
+			content="Simple to-do list"
+		/>
+		<meta
+			name="robots"
+			content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1"
+		/>
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Tasks | Doit! To-Do List" />
 		<meta property="og:description" content="Simple to-do list" />
-		<meta property="og:url" content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/" />
+		<meta
+			property="og:url"
+			content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/"
+		/>
 		<meta property="og:site_name" content="Doit!" />
-		<meta property="og:image" content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png" />
-		<link rel="apple-touch-startup-image" href="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png" />
+		<meta
+			property="og:image"
+			content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png"
+		/>
+		<link
+			rel="apple-touch-startup-image"
+			href="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png"
+		/>
 		<meta name="apple-mobile-web-app-title" content="Doit! To-Do List" />
-		<meta property="og:image:alt" content="Page of calendar with a checkmark and text saying 'Doit!'" />
-		<meta property="og:image:secure_url" content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png" />
+		<meta
+			property="og:image:alt"
+			content="Page of calendar with a checkmark and text saying 'Doit!'"
+		/>
+		<meta
+			property="og:image:secure_url"
+			content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png"
+		/>
 		<meta property="og:locale" content="en_US" />
 		<meta property="article:author" content="Paul Reid" />
 		<meta property="og:image:width" content="200" />
@@ -33,15 +61,28 @@
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:description" content="Simple to-do list" />
 		<meta name="twitter:title" content="Tasks | Doit! To-Do List" />
-		<meta name="twitter:image" content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png" />
+		<meta
+			name="twitter:image"
+			content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/banner.png"
+		/>
 		<meta
 			name="twitter:image:alt"
 			content="Doit! logo: page of calendar with a checkmark and text saying 'Doit!'"
 		/>
-		<meta name="twitter:url" content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/" />
-		<link rel="canonical" href="https://paul-s-reid.com/web-dev/Doit!-html-css-js/index.html" />
+		<meta
+			name="twitter:url"
+			content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/"
+		/>
+		<link
+			rel="canonical"
+			href="https://paul-s-reid.com/web-dev/Doit!-html-css-js/index.html"
+		/>
 		<link rel="icon" href="favicon.png" sizes="200x200" />
-		<link rel="apple-touch-icon" rel="apple-touch-icon-precomposed" href="favicon.png" />
+		<link
+			rel="apple-touch-icon"
+			rel="apple-touch-icon-precomposed"
+			href="favicon.png"
+		/>
 		<link rel="mask-icon" href="favicon.png" color="blue" />
 		<meta name="msapplication-TileImage" content="favicon.png" />
 		<meta name="application-name" content="Doit! To-Do List" />
@@ -54,7 +95,10 @@
 		<link rel="me" href="mailto:paul@reid-family.org" />
 		<link rel="me" href="sms:+18472243009" />
 		<meta itemprop="name" content="Doit! To-Do List" />
-		<meta itemprop="image" content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/favicon.png" />
+		<meta
+			itemprop="image"
+			content="https://paul-s-reid.com/web-dev/Doit!-html-css-js/favicon.png"
+		/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="blue" />
 		<meta name="theme-color" content="#4285f4" />
@@ -84,7 +128,10 @@
 				<tbody id="tasks">
 					<tr class="task">
 						<td colspan="3" id="addNew">
-							<i class="fas fa-plus button" onclick="addNew()"></i>
+							<i
+								class="fas fa-plus button"
+								onclick="addNew()"
+							></i>
 						</td>
 					</tr>
 				</tbody>
@@ -92,29 +139,35 @@
 		</form>
 		<p id="browseHappy">
 			<noscript
-				>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your
-				experience.</noscript
+				>You are using an <strong>outdated</strong> browser. Please
+				upgrade your browser to improve your experience.</noscript
 			>
 			<!--[if lt IE 7
-				]>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your
-				experience.<!
+				]>You are using an <strong>outdated</strong> browser. Please
+				upgrade your browser to improve your experience.<!
 			[endif]-->
 			<iframe
-				>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your
-				experience.</iframe
+				>You are using an <strong>outdated</strong> browser. Please
+				upgrade your browser to improve your experience.</iframe
 			>
 		</p>
 		<div id="newTaskContent">
 			<cell class="checkboxParent">
 				<input type="checkbox" class="button" />
 				<br />
-				<i class="fas fa-trash-alt button" onclick="noTask('delete');"> </i>
+				<i class="fas fa-trash-alt button" onclick="noTask('delete');">
+				</i>
 				<br />
 				<i class="fas fa-save button" onclick="save();"> </i>
 			</cell>
 			<cell class="taskName">
 				<h4 class="name">
-					<input class="editName" type="text" name="title" placeholder="Title" />
+					<input
+						class="editName"
+						type="text"
+						name="title"
+						placeholder="Title"
+					/>
 				</h4>
 				<h5 class="description">
 					<textarea
@@ -132,9 +185,13 @@
 					<input type="radio" name="new1" class="button" />
 					<label class="repeat"
 						>Every
-						<input min="1" maxlength="13" type="number" class="editRepeat" style="width: 165px" /><select
+						<input
+							min="1"
+							maxlength="13"
+							type="number"
 							class="editRepeat"
-						>
+							style="width: 165px"
+						/><select class="editRepeat">
 							<option value="d">day(s)</option>
 							<option value="w">week(s)</option>
 							<option value="m">month(s)</option>
@@ -142,7 +199,13 @@
 					</label>
 					<input type="radio" name="new1" class="button" />
 					<label class="repeat">
-						<input min="1" maxlength="18" type="number" class="editRepeat" style="width: 225px" />x a
+						<input
+							min="1"
+							maxlength="18"
+							type="number"
+							class="editRepeat"
+							style="width: 225px"
+						/>x a
 						<select class="editRepeat">
 							<option value="d">day</option>
 							<option value="w">week</option>
@@ -167,7 +230,14 @@
 						/>repetitions</label
 					>
 					<input type="radio" name="new2" class="button" />
-					<label class="repeat">Until <input type="date" class="editEnd" style="width: 295px" /> </label>
+					<label class="repeat"
+						>Until
+						<input
+							type="date"
+							class="editEnd"
+							style="width: 295px"
+						/>
+					</label>
 				</div>
 			</cell>
 		</div>

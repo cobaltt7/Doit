@@ -1,11 +1,15 @@
 var radio = 1;
 
 function addNew() {
-	var task = document.createElement("tr");
+	var task       = document.createElement("tr");
 	task.className = "task";
-	task.id = "task" + document.getElementById("tasks").children.length;
-	task.innerHTML = document.getElementById("newTaskContent").innerHTML.replace(/cell/gi, "td");
-	document.getElementById("tasks").insertBefore(task, document.getElementById("addNew").parentElement);
+	task.id        = "task" + document.getElementById("tasks").children.length;
+	task.innerHTML = document
+		.getElementById("newTaskContent")
+		.innerHTML.replace(/cell/gi, "td");
+	document
+		.getElementById("tasks")
+		.insertBefore(task, document.getElementById("addNew").parentElement);
 	document.getElementsByName("new").forEach(function () {
 		this.name = document.getElementById("tasks").children.length;
 	});
@@ -33,8 +37,8 @@ function noTask(element, method) {
 
 function fade(element) {
 	element.style.opacity = 1;
-	var timesRun = 0;
-	var interval = setInterval(function () {
+	var timesRun          = 0;
+	var interval          = setInterval(function () {
 		timesRun++;
 		if (timesRun === 100) {
 			clearInterval(interval);
