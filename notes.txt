@@ -1,7 +1,7 @@
 names and values:
 	checked-#			=	status
-		TRUE				=	checked
-		FALSE				=	unchecked
+		true				=	checked
+		false				=	unchecked
 	name-#				=	name
 	descr-#				=	description
 	frequency-#			=	frequency
